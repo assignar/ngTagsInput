@@ -239,7 +239,7 @@ tagsInput.directive('autoComplete', function($document, $timeout, $sce, $q, tags
                             suggestionList.reset();
                             handled = true;
                         }
-                        else if (key === KEYS.enter || key === KEYS.tab) {
+                        else if (key === KEYS.enter) {
                             handled = scope.addSuggestion();
                         }
                     }
